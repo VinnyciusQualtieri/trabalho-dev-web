@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>so da ruim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="header">
+            <span> cadastro de funcionarios</span>
+
+            <button onclick="openmodal()" id="new">incluir</button>
+        </div>
+        <div class="divtable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>funcao</th>
+                        <th>salario</th>
+                        <th class="açao">editar</th>
+                        <th class="açao">excluir</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="modal-conteiner">
+            <div class="modal">
+                <form>
+                    <label for="m-nome">nome</label>
+                    <input id="m-nome" type="text" required />
+
+                    <label for="m-funcao">funcao</label>
+                    <input id="m-funcao" type="text" required />
+
+                    <label for="m-salario">salario</label>
+                    <input id="m-salario" type="number" required />
+                    <button id="btnsalvar">salvar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <script scr="script.js"></script>
+</body>
+
+</html>

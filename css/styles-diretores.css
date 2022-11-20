@@ -1,0 +1,21 @@
+body{
+    background: #222;
+}
+
+.card {
+    background: #222;
+    padding: 50px;
+    color: white;
+    margin: auto;
+    background: #222;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.card-body {
+    color: white;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    
+}

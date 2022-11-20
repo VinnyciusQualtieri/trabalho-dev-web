@@ -1,0 +1,170 @@
+/* NAVBAR */
+a.active {
+    border-bottom: 1px solid #777;
+}
+
+.navbar-brand {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+/* ShoWcase  */
+
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('/img/showcase.jpg') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+#showcase-container {
+    text-align: center;
+}
+
+#showcase-container h2 {
+    font-size: 2.5rem;
+}
+
+#showcase-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+.botao {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: #111;
+    color: #eee;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background: #777;
+    color: #eee;
+}
+
+#clients {
+    width: 100%;
+    background: #eee;
+    color: #111;
+    padding: 50px;
+}
+
+#clients-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 15px;
+}
+
+.client {
+    display: inline-block;
+    width: 40%;
+}
+
+
+/* Product */
+#product {
+    width: 100%;
+    padding: 72px;
+}
+
+#product h2 {
+    font-size: 50px;
+}
+
+#product-container {
+    display: flex;
+    margin-top: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+#items {
+    width: 650px;
+}
+
+#iphone {
+    width: 400px;
+}
+
+#items .item {
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    }
+
+
+
+
+@media (max-width: 700px) {
+    #product-container {
+        flex-direction: column;
+    }
+
+    #items {
+        width: 90%;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 1200px) {
+    #items .item {
+        font-size: 1em;
+    }
+
+    #product h2 {
+        font-size: 40px;
+    }
+
+    #iphone {
+        width: 290px;
+    }
+}
+
+@media (max-width: 550px) {
+    #clients-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client {
+        width: 50%;
+    }
+}
